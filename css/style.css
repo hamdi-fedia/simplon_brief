@@ -27,12 +27,7 @@ body{
     background-color:#ffffff ;
     color: black;
 }
-#img-lo a:hover{
-    background-color:transparent !important;
-}
-.img-slide{
-    height: 100% !important;
-}
+
 
 /*-----------------------------------section-description---------------------------------------*/
 .bd-description{
@@ -57,9 +52,9 @@ body{
 /*--------------------------------------------section-cards-acteurs---------------------------------------*/
 
 .text-acteur{
-    background-color: rgb(165 171 180);
+    background-color: rgb(165,171,180,0.6);
     width: 100%;
-    height: 80%;  
+    height: 350px;  
     position: absolute;
     z-index: 1;
     top: 0;
@@ -70,7 +65,7 @@ body{
 }
 .image-acteur{
     width: 100%;
-    height: 80%;   
+    height: 350px;   
 }
 .image-acteur:hover{
     opacity: 0;
@@ -85,11 +80,19 @@ margin: 0;
     font-weight: bold;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    padding: 20px;
+    padding-top: 20px;
 }
 .slug {
     color:black;
     font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+.house{
+    color:black;
+    font-size: 19px;
     font-weight: bold;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
@@ -108,7 +111,7 @@ margin: 0;
 /*-----------------------------------------------section-cards-serie----------------------------------*/
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
     max-width: 300px;
     margin: auto;
     text-align: center;
@@ -131,16 +134,29 @@ margin: 0;
   .card button:hover {
     opacity: 0.7;
   }
+
+@font-face {
+    font-family: game;
+    src: url('webfont.eot');
+    src: url('webfont.eot?#iefix') format('embedded-opentype'),
+    url('css/VTCSwitchbladeRomanceDrunk.ttf') format('ttf'), 
+    url('webfont.svg#svgFontName') format('svg');
+}
 h1{
-    color: wheat;
-    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-family: game;
+    font-size: 3rem;
 }
   /*----------------------------footer----------------------------*/
   .color-footer{
-      color: wheat;
+      color: rgb(255, 255, 255);
       background-color: black;
+     
   }
   .color-link{
       color: black;
-      font-size: 20px;
+      font-size: 20px;   
   }
+ /*---------------------------responsive----------------------------*/
+
+ 
